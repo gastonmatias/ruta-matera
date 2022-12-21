@@ -1,11 +1,12 @@
-import { Grid} from "@mui/material"
 import { useEffect, useState } from "react"
-import { useDispatch, useSelector } from "react-redux"
 import { useLocation } from "react-router-dom"
-import { Filters } from "../components/Filters"
-import ProductCard from "../components/ProductCard"
+import { useDispatch, useSelector } from "react-redux"
+
+import { Grid} from "@mui/material"
+
+import { Filters, ProductCard } from "../components"
 import { getProductsFiltered } from "../helpers/getProductFiltered"
-import { startLoadingCategories, startLoadingProducts } from "../store/shop/thunks"
+import { startLoadingCategories, startLoadingProducts } from "../store"
 
 export const Products = () => {
 
@@ -20,7 +21,6 @@ export const Products = () => {
     loadShopData()
     filterFromHome()
   }, []);
-
 
   // x si el usuario clickeo categoria desde home
   const filterFromHome = () => {
@@ -46,7 +46,6 @@ export const Products = () => {
   <>
     <Grid 
       container
-      // component='section'
       alignItems='stretch'
       rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }}
       px={2}
@@ -60,7 +59,6 @@ export const Products = () => {
       {
       productsToShow.map((e) => (
         <Grid key={e.id} item
-          // columns={{xs:12 ,sm:5, md: 7}}
            xs={12} sm={6} md={4} lg={3}
         >
           <ProductCard key={e.id}{...e}/>
@@ -68,7 +66,6 @@ export const Products = () => {
       ))}
 
     </Grid >
-    
   </>
   )
 }

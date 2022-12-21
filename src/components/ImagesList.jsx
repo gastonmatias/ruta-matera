@@ -1,22 +1,14 @@
-import * as React from 'react';
+import {  useNavigate } from 'react-router-dom';
+
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
-import ListSubheader from '@mui/material/ListSubheader';
-import IconButton from '@mui/material/IconButton';
-import InfoIcon from '@mui/icons-material/Info';
+import { useMediaQuery, useTheme } from '@mui/material';
 
 import bombilla_cisne from '../assets/images_list/bombilla_cisne.webp'
-import bombillon_alpaca from '../assets/images_list/bombillon_alpaca.webp'
-import mate_camionero from '../assets/images_list/mate_camionero.webp'
 import mate_camionero2 from '../assets/images_list/mate_camionero2.webp'
-import mate_imperial from '../assets/images_list/mate_imperial.webp'
-import imperialbulla from '../assets/images_list/imperialbulla.webp'
-import imperial_rupestre from '../assets/images_list/imperial_rupestre.webp'
 import rosamonte from '../assets/images_list/rosamonte.webp'
 import stanleyverde from '../assets/images_list/stanleyverde.webp'
-import { useMediaQuery, useTheme } from '@mui/material';
-import {  useNavigate } from 'react-router-dom';
 
 export const ImagesList = () => {
   

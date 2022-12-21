@@ -34,8 +34,7 @@ export const SlickSlider = () => {
           key={i} src={item}
           style={{
               height: '100%',
-              // objectFit:'contain',
-              objectFit:'fill',
+              objectFit:'contain',
               padding: 0,
               margin: 0,
           }}

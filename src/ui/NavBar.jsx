@@ -3,21 +3,14 @@ import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 import { 
-  Badge, AppBar,Box,Toolbar,IconButton,Typography,Menu,Container,Button,Tooltip,MenuItem, Icon
+  Badge, AppBar,Box,Toolbar,IconButton,Typography,Menu,Container,Button,Tooltip,MenuItem
 } from '@mui/material';
 
 import MenuIcon from '@mui/icons-material/Menu';
-import AdbIcon from '@mui/icons-material/Adb';
-import SignpostIcon from '@mui/icons-material/Signpost';
-import SignpostOutlinedIcon from '@mui/icons-material/SignpostOutlined';
-import SignpostTwoToneIcon from '@mui/icons-material/SignpostTwoTone';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import ExploreIcon from '@mui/icons-material/Explore';
-import ExploreTwoToneIcon from '@mui/icons-material/ExploreTwoTone';
 
 import { CartDrawer } from '../components/Cart/CartDrawer';
-
-import mate_icon from '../assets/otros/mate_icon.png'
 
 const pages = ['Productos', 'Acerca de'];
 
@@ -75,13 +68,10 @@ export const NavBar = () => {
               letterSpacing: '.3rem',
               color: 'inherit',
               cursor: 'pointer'
-              
-              // textDecoration: 'none',
             }}
           >
             Ruta Matera
           </Typography>{/* //! fin desktop titulo */}
-          {/* </NavLink> */}
 
 
           {/* //! INIT NAVIGATION MENU PHONE */}
@@ -110,7 +100,6 @@ export const NavBar = () => {
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
-            //   onClose={()=>setAnchorElNav(null)}
               sx={{
                 display: { xs: 'block', md: 'none' },
               }}

@@ -3,14 +3,13 @@ import { SlickSlider } from "../ui/slider/SlickSlider";
 
 import { ImagesList } from "../components";
 
-import { grey, teal, yellow } from "@mui/material/colors";
+import { grey } from "@mui/material/colors";
 
 export const Home = () => {
   return (
   <>
   <Box sx={{ flexGrow: 1 }}>
    <Grid
-      // direction='column'
       container
       alignItems='center'
       justifyContent='center'
@@ -33,9 +32,7 @@ export const Home = () => {
         <ImagesList/>
       </Grid>
 
-      {/* <Grid item xs={12} sm={11} md={11}> */}
       <Grid item xs={10} sm={7} md={7} mt={2} p={2} 
-            // sx={{ bgcolor:`${grey[100]}` }} 
       >
       <Paper elevation={3}
             sx={{ bgcolor:`${grey[100]}`, p: 2 }} 

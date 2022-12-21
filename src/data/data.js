@@ -1,6 +1,5 @@
 import camionero from '../assets/productos/camionero.jpg'
 import imperial from '../assets/productos/imperial.jpg'
-import stanley_verde from '../assets/productos/stanley_verde.webp'
 import stanley_verde2 from '../assets/productos/stanley_verde2.webp'
 import termolar from '../assets/productos/termolar.jpg'
 import playadito2 from '../assets/productos/playadito2.jpg'

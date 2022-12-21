@@ -8,7 +8,8 @@ export const BottomNav = () => {
     const classes ={     
         '.MuiBottomNavigationAction-label, .MuiSvgIcon-root':{
             color: 'white',
-        }
+        },
+        'cursor':'inherit'
     }
 
   return (

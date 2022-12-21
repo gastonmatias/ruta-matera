@@ -1,6 +1,6 @@
 //! NOTA: importar createTheme & THemeProvider desde @mui/material
 //! NO desde @mui/system!
-//! importacion automatica suele confundirse!
+//! importacion automatica suele fallar!
 
 import { teal,red } from "@mui/material/colors"
 import { createTheme, ThemeProvider } from "@mui/material"

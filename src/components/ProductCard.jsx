@@ -12,7 +12,6 @@ import RemoveShoppingCartIcon from '@mui/icons-material/RemoveShoppingCart';
 import { addToCart, removeFromCart } from '../store/cart/cartSlice';
 
 const classes ={
-  // width: 350,
   height: '100%',
   width: '100%',
   display: 'flex',
@@ -24,7 +23,7 @@ const classes ={
   pb:2
 }
 
-export default function ProductCard (props) {
+export const ProductCard = (props) => {
 
   const {id, img, nombre, descripcion,precio, caract} = props
   
