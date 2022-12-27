@@ -26,7 +26,7 @@ export const Layout = ({children}) => {
                 flexDirection:'column',
                 justifyContent:'',
                 minHeight:'100vh',
-                width:'100vw'
+                width:'auto'
             }}>
 
             <CssBaseline />
